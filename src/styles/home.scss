@@ -1,0 +1,120 @@
+
+
+.home {
+  font-family: 'Roboto';
+  background-color: #1d2951;
+
+  &__wrapper {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+
+    &__top-div {
+      display: inherit;
+      flex-direction: inherit;
+      align-items: inherit;
+      justify-content: space-evenly;
+      position: relative;
+      top: -1em;
+
+      .centered-text {
+        text-align: center;
+
+        p {
+          margin: 0.2rem 0;
+          font-size: 20px;
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 300;
+          letter-spacing: 0.28em;
+        }
+      }
+
+      .report {
+        color: white;
+        border: 1px solid #c4c4c4;
+        color: #c4c4c4;
+        background: transparent;
+        font-size: 26px;
+        letter-spacing: 0.25em;
+        padding: 1em 3em;
+        border-radius: 20px 0px;
+        margin-top: 1em;
+        transition-property: background-color;
+        transition-duration: 1s;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.3)
+        }
+      }
+
+      .donate {
+        background: #c4c4c4;
+        color: #000000;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 1em 2em;
+        letter-spacing: 0.25em;
+        margin-top: 1em;
+      }
+    }
+
+    &__bottom-div {
+      width: 100%;
+      position: absolute;
+      bottom: 6rem;
+      color: #9c9c9c;
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+
+        .numbers {
+          display: inherit;
+          flex-direction: column;
+          align-items: center;
+
+          p {
+            font-weight: bold;
+            font-size: 42px;
+            letter-spacing: 0.09em;
+          }
+          span {
+            font-size: 12px;
+            letter-spacing: 0.17em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .home {
+    &__wrapper {
+      position: relative;
+
+      &__top-div {
+        .centered-text {
+          p {
+            margin: 1.4rem 0;
+          }
+        }
+      }
+
+      &__bottom-div {
+        width: 70%;
+        .wrapper {
+          color: #9c9c9c;
+        }
+      }
+    }
+  }
+}

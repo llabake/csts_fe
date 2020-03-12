@@ -1,0 +1,47 @@
+.navbar {
+  position: relative;
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 2em 3em;
+    font-size: 1.2rem;
+    z-index: 5;
+
+    .logo {
+      font-size: 32px;
+      font-weight: 200;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0.25em;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .link {
+        color: white;
+        text-decoration: none;
+        padding: 1em 3em;
+        font-size: 12px;
+        letter-spacing: 0.17em;
+
+        &--bordered {
+          border: 1px solid white;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+}

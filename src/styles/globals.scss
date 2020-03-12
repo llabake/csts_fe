@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+a, button {
+  outline: none !important;
+}
+
+html {
+  font-size: 10px;
+  background-color: #0D0B0B;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
